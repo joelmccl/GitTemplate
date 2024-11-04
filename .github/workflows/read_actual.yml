@@ -41,7 +41,8 @@ jobs:
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
       - name: Run Python script
-        run: create_txt_script.py
+        run: | 
+          python create_txt_script.py
 
       - name: Display contents of generated txt file
         run: |
